@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:myapp/screens/home_screen.dart';
 
 class NwesPage extends StatelessWidget {
   const NwesPage({super.key});
@@ -131,6 +132,26 @@ class NwesPage extends StatelessWidget {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 16),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: ((context) => HomePag()),
+                  ),
+                );
+              },
+              child: Container(
+                height: 32 / screenH * responsevH,
+                width: 32 / screenW * responsevW,
+                decoration:
+                    BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                child: SvgPicture.asset('assets/Group26.svg'),
+              ),
+            ),
+          )
         ],
       ),
     );

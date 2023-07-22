@@ -40,11 +40,11 @@ class HomePag extends StatelessWidget {
                                 1 // assuming that line-height is equal to normal
                             ),
                         border: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.red),
+                          borderSide: const BorderSide(color: Colors.red),
                           borderRadius: BorderRadius.circular(22),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.red),
+                          borderSide: const BorderSide(color: Colors.red),
                           borderRadius: BorderRadius.circular(22),
                         ),
                         contentPadding: EdgeInsets.symmetric(
@@ -143,7 +143,7 @@ class HomePag extends StatelessWidget {
                           SizedBox(
                             height: 80 / screenH * responsevH,
                           ),
-                          Text(
+                          const Text(
                             'by Ryan Browne',
                             style: TextStyle(
                               color: Colors.white,
@@ -154,7 +154,7 @@ class HomePag extends StatelessWidget {
                               height: 1,
                             ),
                           ),
-                          Text(
+                          const Text(
                             'Crypto investors should be prepared to lose all their money, BOE governor says',
                             style: TextStyle(
                               color: Colors.white,
@@ -166,7 +166,7 @@ class HomePag extends StatelessWidget {
                             ),
                           ),
                           Spacer(),
-                          Text(
+                          const Text(
                             '“I’m going to say this very bluntly again,” he added. “Buy them only if you’re prepared to lose all your money.”',
                             style: TextStyle(
                               color: Colors.white,
