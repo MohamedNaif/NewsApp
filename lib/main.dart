@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:myapp/screens/home_screen.dart';
+import 'package:myapp/screens/splash_screen.dart';
 
 import 'data/cubits/home_screen_cubit/news_app_cubit.dart';
 import 'data/cubits/news_screen_cubit/news_screen_cubit.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomePag(),
+        home: SplashScreen(),
         theme: ThemeData(
           primaryColor: Color(0xffFF3A44),
         ),

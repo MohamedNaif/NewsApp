@@ -77,15 +77,15 @@ class HomePag extends StatelessWidget {
             SizedBox(
               height: 24 / screenH * responsevH,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ElevatedButton(
-                  // style: ButtonStyle(backgroundColor: MaterialStateColor(Color(0xffFF3A44))),
-                  onPressed: () {
-                    context.read<NewsAppCubit>().getNewsApp();
-                  },
-                  child: Text('Get News')),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: ElevatedButton(
+            //       // style: ButtonStyle(backgroundColor: MaterialStateColor(Color(0xffFF3A44))),
+            //       onPressed: () {
+            //         context.read<NewsAppCubit>().getNewsApp();
+            //       },
+            //       child: Text('Get News')),
+            // ),
             SizedBox(
               height: 24 / screenH * responsevH,
             ),
