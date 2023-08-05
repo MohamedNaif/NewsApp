@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
     // SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
     Future.delayed(const Duration(seconds: 3), () {
-      context.read<NewsAppCubit>().getNewsApp();
+      context.read<NewsAppCubit>().getNewsApp('t');
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(

@@ -8,10 +8,10 @@ import '../model/news_app/article.dart';
 import '../model/news_app/source.dart';
 
 class NewsAppRepo {
-  Future<NewsApp?> getNewsApp() async {
+  Future<NewsApp?> getNewsApp({required String text}) async {
     try {
       var response = await http.get(Uri.parse(
-          'https://newsapi.org/v2/everything?q=tesla&from=2023-06-23&sortBy=publishedAt&apiKey=5974f1f8a59f4bde89d3bfdd542707f1'));
+          'https://newsapi.org/v2/everything?q=$text&sortBy=publishedAt&apiKey=5974f1f8a59f4bde89d3bfdd542707f1'));
 
       Map<String, dynamic> deCodeResponse = jsonDecode(response.body);
       if (response.statusCode == 200) {

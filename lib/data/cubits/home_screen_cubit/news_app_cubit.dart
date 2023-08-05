@@ -9,10 +9,10 @@ part 'news_app_state.dart';
 class NewsAppCubit extends Cubit<NewsAppState> {
   NewsAppCubit() : super(NewsAppInitial());
 
-  getNewsApp() {
+  getNewsApp(String text) {
     emit(NewsAppLoading());
 
-    NewsAppRepo().getNewsApp().then((value) {
+    NewsAppRepo().getNewsApp(text: text).then((value) {
       if (value != null) {
         emit(NewsAppSucsess(ourResponse: value));
       } else {
